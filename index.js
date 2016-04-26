@@ -46,10 +46,7 @@ module.exports = function createMerger(options) {
 				return a
 			}
 			if(options.array == 'concat') {
-				b.forEach(function(val) {
-					a.push(val)
-				})
-				return a
+				return a.concat(b)
 			}
 			//options.array == 'replace'
 		}
